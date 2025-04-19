@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(44, 44, 44);
+   
+}
+.boody{
+    margin: 0;
+  padding: 0;
+  background-color: rgb(44, 44, 44);
+
+}
+.nav-container{
+  display:  flex;  
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+.nav-link:hover{
+    color: rgb(255, 225, 55);
+transform: scale(1.1);
+
+}
+.contact-container{
+    position: absolute;
+    right: 100px;
+    background-color: white;
+    padding: 5px 5px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.2);
+}
+.contact-container .contact-link{
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+    font-size: 20px;
+   
+}
+.contact-container:hover{
+    transform: scale(1.1);
+}
+.image-container img{
+    text-align: center;
+    width: 700px;
+padding: 8px;
+position: absolute; 
+top: 200px;
+right: 10px;
+z-index: 1;
+}
+.logo-container {
+position: absolute;
+left: 100px;
+}
+.logo-container .logo{
+    text-decoration: none;
+    color: rgb(255, 225, 55);
+    font-size: 23px;
+    font-weight: bold;
+}
+.label-container{
+    position: relative;
+    z-index: 2;
+    margin: 0px auto;
+    overflow: hidden;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-right: 600px;
+   
+}
+
+
+.bag-link{
+ position: relative;
+ display: inline-block;
+ background-color: white;
+ padding: 10px 20px 10px 40px;
+ border: none;
+ border-radius: 15px;
+ text-decoration: none;
+ color: black;
+ box-shadow: 5px 5px 5px rgba(0, 0, 0,0.2);
+ transition:  transform 0.3s ease-in-out;
+}
+.bag-link:hover{
+    transform: scale(1.1);
+}
+
+.bag-link img{
+    position: absolute;
+    top: 30%;
+    right: 90px;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+    object-fit: cover;
+}
+.hello{
+    font-size: 20px;
+    color: white;
+}
+.intro-text{
+    font-size: 2em;
+   color: white;
+}
+.intro-name{
+    color: rgb(255, 225, 55);
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 1px;
+}
+.paragraph{
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+.second-paragraph{
+    font-size: 1em;
+    color: white;
+    margin: 10px;
+    padding: 0px;
+}
+.project-container{
+    transition: transform 0.3s ease-in-out;
+}
+.project-container .project-link{
+color: white;
+font-size: 23px;
+font-weight: bold;
+text-decoration: none;
+}
+.project-link:hover{
+    color: rgb(255, 225, 55);
+}
+.project-container:hover{
+    transform: scale(1.1);
+}
+.dropdown-menu{
+position: absolute;
+background-color: white;
+padding: 20px 30px;
+border-radius: 10px;
+z-index: 1000;
+list-style: none;
+padding: 0;
+margin: 0;
+
+}
+.dropdown-menu li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    width:100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+.dropdown-menu li{
+    margin-bottom: 10px;
+ 
+}
+.dropdown-menu li:last-child { 
+    margin-bottom: 0;
+  }
+.dropdown-menu li a:hover{
+    background-color: rgb(43, 43, 43);
+    color: white;
+
+}

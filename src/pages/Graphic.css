@@ -1,0 +1,97 @@
+.graphic-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 200px;
+
+}
+.cards{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 320px;
+    overflow: hidden;
+transition: transform 0.3s ease-in-out;
+}
+.cards:hover{
+    transform: scale(1.1);
+}
+.cards img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 10px;
+  
+}
+.cards button{
+    background-color: rgb(36, 36, 36);
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.cards button:hover{
+    background-color: rgb(75, 75, 75);
+}
+.visit-instagram-paragraph p{
+    color: white;
+    font-size: 1em;
+    color:  rgb(255, 225, 55);
+    text-decoration: underline;
+   margin-left: 20px;
+   cursor: pointer;
+}
+.platforms-image{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+   position: absolute;
+   bottom: -800px;
+   left: 530px;
+
+}
+
+.platforms-image img{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+   
+}
+.platforms-image img:hover{
+    transform: scale(1.5);
+}
+.platform-container{
+    background-color: white;
+    border-radius: 10px;
+    list-style: none;
+  
+    overflow: hidden;
+}
+.platform-container li a{
+display: block;
+text-decoration: none;
+color: black;
+font-weight: bold;
+width:100%;
+
+
+box-sizing: border-box;
+}
+.platform-container li a:hover{
+    color: rgb(255, 225, 55);
+    
+}

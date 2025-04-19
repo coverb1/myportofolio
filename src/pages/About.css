@@ -1,0 +1,29 @@
+
+.about-image-container img{
+width: 400px;
+position: absolute;
+top: 200px;
+background-color: white;
+right: 200px;
+border-radius: 20px;
+object-fit: cover;
+}
+.about-dedcription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.about-dedcription h1{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.about-dedcription span{
+    color: rgb(255, 225, 55);
+}
+.about-dedcription p{
+    color: rgb(230, 230, 230);
+}
