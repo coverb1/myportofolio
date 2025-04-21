@@ -13,9 +13,6 @@ import fiverrlogo from '../assets/fiverrlogo.png'
 import { useState } from 'react'
 const Graphic = () => {
   const [showplatforms, setshowplatforms]=useState(false);
-  const toggleplatforms=()=>{
-    setshowplatforms(!showplatforms)
-  }
   return (
     <div>
       <div className='graphic-card-container'>
