@@ -8,47 +8,61 @@ import illustratorlogo from "../assets/illustratorlogo.png";
 import cvicon from "../assets/cvicon.png";
 import resume from "../assets/resume.pdf";
 const Card = () => {
+
+  const skillsDetails = [
+    {
+      id:1,
+      title: "Css Skills",
+      image: csslogo,
+      desc: "I have skills in Css",
+    },
+    {
+      id:2,
+      title: "Html Skills",
+      image: htmllogo,
+      desc: "I have skills in Html",
+    },
+    {
+      id:3,
+      title: "Java Skills",
+      image: javalogo,
+      desc: "I have skills in Java",
+    },
+    {
+      id:4,
+      title: "React Skills",
+      image: reactlogo,
+      desc: "I have skills in React",
+    },
+    {
+      id:5,
+      title: "Photoshop Skills",
+      image: photoshoplogo,
+      desc: "I have skills in Photoshop",
+    },
+    {
+      id:6,
+      title: "Illustrator Skills",
+      image: illustratorlogo,
+      desc: "I have skills in Illustrator",
+    },
+  ]
   return (
     <div className="container">
       <div className="card-head">
         <h1>Skills I Have</h1>
       </div>
       <div className="card-container">
-        <div className="card">
-          <img src={csslogo} alt="" />
-          <h1>Css skills</h1>
-          <p>I have skills in Css</p>
-        </div>
-
-        <div className="card">
-          <img src={htmllogo} alt="" />
-          <h1>Html skills</h1>
-          <p>I have skills in Html</p>
-        </div>
-
-        <div className="card">
-          <img src={reactlogo} alt="" />
-          <h1>React skills</h1>
-          <p>I have skills in React</p>
-        </div>
-
-        <div className="card">
-          <img src={javalogo} alt="" />
-          <h1>Javascript skills</h1>
-          <p>I have skills in Javascript</p>
-        </div>
-
-        <div className="card">
-          <img src={photoshoplogo} alt="" />
-          <h1>Photoshop skills</h1>
-          <p>I have skills in Photoshop</p>
-        </div>
-
-        <div className="card">
-          <img src={illustratorlogo} alt="" />
-          <h1>illustrator skills</h1>
-          <p>I have skills on Illustrator</p>
-        </div>
+        {skillsDetails.map((card)=>
+          <div 
+          key={card.id}
+          className="card"
+          >
+           <img src={card.image} alt="" />
+           <h1>{card.title}</h1> 
+           <p>{card.desc}</p>
+          </div>
+        )}
       </div>
 
       <div className="button">

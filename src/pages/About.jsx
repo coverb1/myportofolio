@@ -1,6 +1,8 @@
 import "./About.css";
 import pass from "../assets/pass.png";
 import Card from "../Cards/Card";
+import  {Menu} from 'lucide-react'
+
 const About = () => {
   return (
     <>
@@ -20,6 +22,10 @@ const About = () => {
 
       <div className="about-image-container">
         <img className="about-image" src={pass} alt="" />
+      </div>
+
+      <div className="menu">
+        <Menu size={30} /> 
       </div>
     </div>
     <Card />

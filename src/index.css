@@ -182,3 +182,7 @@ margin: 0;
     color: white;
 
 }
+
+@media (max-width: 600px) {
+    
+}

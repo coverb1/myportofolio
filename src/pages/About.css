@@ -29,6 +29,11 @@
 .about-dedcription p {
   color: rgb(230, 230, 230);
 }
+.menu{
+  display: none;
+  color: white;
+  cursor: pointer;
+}
 
 /* Responsviness */
 @media (max-width: 768px) {
@@ -51,4 +56,13 @@
         border-radius: 20px;
         object-fit: cover;
       }
+    .menu{
+      display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+  .menu{
+    display: block;
+  }
 }

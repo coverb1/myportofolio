@@ -71,7 +71,6 @@
 }
 
 /* Responsivness */
-
 @media (max-width: 600px){
     .container{
         margin-left: auto;
@@ -80,26 +79,16 @@
         padding-right: 1rem;
     }
     .card-container {
-        display: grid;
         grid-template-columns: repeat(1, minmax(0, 1fr));
         gap: 10px;
     }
     .card {
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgb(175, 175, 175);
-        text-align: center;
-        width: 350px;
-        transition: transform 0.3s ease-in-out;
-        cursor: pointer;
-    }
-    .card:hover {
-        transform: translateY(-0.5rem);
+        width: 370px;
     }
     .card-head h1 {
         color: white;
         bottom: 5px;
-        font-size: 25px;
+        font-size: 20px;
     }
     .button{
         margin-top: 3px;
