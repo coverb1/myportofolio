@@ -33,6 +33,9 @@
   display: none;
   color: white;
   cursor: pointer;
+  position: fixed;
+  top: 40px;
+  right: 50px;
 }
 
 /* Responsviness */
@@ -64,5 +67,66 @@
 @media (max-width: 1024px) {
   .menu{
     display: block;
+  }
+  .mobile-nav{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(56, 56, 56);
+    padding: 1em;
+    margin-bottom: 50px;
+    padding: 20px ;
+    width: 200px;
+    border-radius: 10px;
+    z-index: 1000;
+    animation: slideInRight 0.3s ease-in-out;
+  }
+  .link-responsive{
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5em;
+    width: 150px;
+  }
+  .close-icon{
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2em;
+   position: fixed;
+   top: 20px;
+   right: 40px;
+  }
+  .dropdown-link-project{
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5em;
+    width: 150px;
+  }
+  .dropdown-items-projects ul {
+    list-style: none;
+  }
+  .dropdown-items-projects li{
+    margin-bottom: 20px;
+  }
+  .item-projects{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5em;
+    width: 150px;
+  }
+}
+@keyframes slideInRight {
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(0);
   }
 }

@@ -4,7 +4,7 @@
     background-color: rgb(44, 44, 44);
    
 }
-.boody{
+.body{
     margin: 0;
   padding: 0;
   background-color: rgb(44, 44, 44);
@@ -49,8 +49,8 @@ transform: scale(1.1);
     transform: scale(1.1);
 }
 .image-container img{
-    text-align: center;
-    width: 700px;
+text-align: center;
+width: 700px;
 padding: 8px;
 position: absolute; 
 top: 200px;
@@ -183,6 +183,31 @@ margin: 0;
 
 }
 
-@media (max-width: 600px) {
-    
+@media (max-width: 768px) {
+  .up-navbar{
+    display: none;
+  }
+.home-container{
+display: flex;
+flex-direction: column;
+padding: 0em;
+margin-left: auto;
+margin-right: auto;
+padding-left: 2em;
+padding-right: 2em;
+}
+.image-container img{
+    text-align: center;
+    width: 400px;
+}
+.label-container{
+    margin-top: 500px;
+    text-align: center;
+   
+}
+}
+@media(max-width:1024px){
+    .up-navbar{
+        display: none;
+    }
 }

@@ -8,6 +8,7 @@ import Upnavbars from './navbars/Upnavbars.jsx';
 import Web from './pages/Web.jsx'
 import Graphic from './pages/Graphic.jsx'
 
+
 const App = () => {
   return (
  <>
@@ -19,6 +20,7 @@ const App = () => {
   <Route path='/contact' element={<Contact/>}/>
   <Route path='/graphic' element={<Graphic/>}/>
   <Route path='/web' element={<Web/>}/>
+  <Route path='/about/graphic' element={<Graphic/>}/>
 </Routes>
 </>
   )

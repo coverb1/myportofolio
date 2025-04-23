@@ -8,7 +8,7 @@ const Upnavbars = () => {
   };
 
   return (
-    <div>
+    <div className="up-navbar">
       <div className="container">
         <nav className="nav-container">
           <Link to="/" className="nav-link">

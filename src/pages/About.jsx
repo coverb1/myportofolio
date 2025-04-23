@@ -1,9 +1,13 @@
 import "./About.css";
 import pass from "../assets/pass.png";
 import Card from "../Cards/Card";
-import  {Menu} from 'lucide-react'
+import  {Menu,X} from 'lucide-react'
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
+  const[menuOpen,setMenuOpen]=useState(false)
+  const[showprojects,setshowprojects]=useState(false)
   return (
     <>
     <div className="about-container">
@@ -23,11 +27,43 @@ const About = () => {
       <div className="about-image-container">
         <img className="about-image" src={pass} alt="" />
       </div>
-
-      <div className="menu">
+{/* Menu Icon */}
+      <div className="menu" onClick={()=>setMenuOpen(!menuOpen)}>
         <Menu size={30} /> 
       </div>
-    </div>
+        {menuOpen &&(
+          <div className="mobile-nav">
+            <div className="close-icon" onClick={()=>setMenuOpen(false)}>
+              <X size={20}/>
+            </div>
+<Link to="/" className="link-responsive" onClick={()=>setMenuOpen(false)}>Home</Link>
+<Link to="/about" className="link-responsive" onClick={()=>setMenuOpen(false)}>About</Link>
+<div className="dropdown-link-project" onClick={()=>setshowprojects(!showprojects)
+}>
+  Projects ▾
+</div>
+{showprojects&&(
+  <div className="dropdown-items-projects">
+<ul>
+  <li>
+    <Link to="graphic" className="item-projects" onClick={()=>setshowprojects(false)}>
+  Graphic|Designer
+  </Link>
+  </li>
+  <Link to="web" className="item-projects" onClick={()=>setshowprojects(false)}>
+  Websites
+  </Link>
+  <li>
+
+  </li>
+</ul>
+  </div>
+)}
+<Link to="/contact" className="link-responsive" onClick={()=>setMenuOpen(false)}>Contact</Link>
+          </div>
+        )}
+      </div>
+
     <Card />
     </>
   );
