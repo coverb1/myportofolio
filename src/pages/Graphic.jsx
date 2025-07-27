@@ -4,7 +4,6 @@ import graphic2 from "../assets/graphic2.jpg";
 import graphic3 from "../assets/graphic3.jpg";
 import graphic4 from "../assets/graphic4.jpg";
 import graphic5 from "../assets/graphic5.jpg";
-import Graphic6 from "../assets/Graphic6.jpg";
 import upworklogo from "../assets/upworklogo.png";
 import tiktoklogo from "../assets/tiktoklogo.png";
 import linkedinlogo from "../assets/linkedinlogo.png";
@@ -12,11 +11,11 @@ import instagramlogo from "../assets/instagramlogo.png";
 import fiverrlogo from "../assets/fiverrlogo.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu,X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 const Graphic = () => {
   const [showplatforms, setshowplatforms] = useState(false);
-  const[menuOpen,setMenuOpen]=useState(false)
-  const[showprojects,setshowprojects]=useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [showprojects, setshowprojects] = useState(false)
   return (
     <div>
       <div className="graphic-card-container">
@@ -56,7 +55,7 @@ const Graphic = () => {
         </div>
 
         <div className="cards">
-          <img src={Graphic6} alt="" />
+          <img src='../assets/Graphic6.jpg' alt="" />
           <h1>Birthday Flayer</h1>
           <p>Book and get Discount%</p>
           <button>On instagram</button>
@@ -107,43 +106,43 @@ const Graphic = () => {
           <div className="each-image">
             <img src={fiverrlogo} alt="" />
           </div>
-        </div>  
+        </div>
       </div>
-{/* Menu Icon */}
-<div className="menu" onClick={()=>setMenuOpen(!menuOpen)}>
-        <Menu size={30} /> 
+      {/* Menu Icon */}
+      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <Menu size={30} />
 
-        {menuOpen &&(
-           <div className="mobile-nav">
-            <div className="close-icon" onClick={()=>setMenuOpen(false)}>
-              <X size={20}/>
+        {menuOpen && (
+          <div className="mobile-nav">
+            <div className="close-icon" onClick={() => setMenuOpen(false)}>
+              <X size={20} />
             </div>
-<Link to="/" className="link-responsive" onClick={()=>setMenuOpen(false)}>Home</Link>
-<Link to="/about" className="link-responsive" onClick={()=>setMenuOpen(false)}>About</Link>
-<div className="dropdown-link-project" onClick={()=>setshowprojects(!showprojects)
-}>
-  Projects ▾
-</div>
-{showprojects&&(
-  <div className="dropdown-items-projects">
-<ul>
-  <li>
-    <Link to="graphic" className="item-projects" onClick={()=>setshowprojects(false)}>
-  Graphic|Designer
-  </Link>
-  </li>
-  <Link to="web" className="item-projects" onClick={()=>setshowprojects(false)}>
-  Websites
-  </Link>
-  <li>
-  </li>
-</ul>
-  </div>
-)}
-<Link to="/contact" className="link-responsive" onClick={()=>setMenuOpen(false)}>Contact</Link>
+            <Link to="/" className="link-responsive" onClick={() => setMenuOpen(false)}>Home</Link>
+            <Link to="/about" className="link-responsive" onClick={() => setMenuOpen(false)}>About</Link>
+            <div className="dropdown-link-project" onClick={() => setshowprojects(!showprojects)
+            }>
+              Projects ▾
+            </div>
+            {showprojects && (
+              <div className="dropdown-items-projects">
+                <ul>
+                  <li>
+                    <Link to="graphic" className="item-projects" onClick={() => setshowprojects(false)}>
+                      Graphic|Designer
+                    </Link>
+                  </li>
+                  <Link to="web" className="item-projects" onClick={() => setshowprojects(false)}>
+                    Websites
+                  </Link>
+                  <li>
+                  </li>
+                </ul>
+              </div>
+            )}
+            <Link to="/contact" className="link-responsive" onClick={() => setMenuOpen(false)}>Contact</Link>
           </div>
         )}
-        
+
       </div>
     </div>
   );
