@@ -46,6 +46,10 @@ const Card = () => {
       image: illustratorlogo,
       desc: "I have skills in Illustrator",
     },
+    {
+      id:7,
+      title:"express.js",
+    }
   ]
   return (
     <div className="container">

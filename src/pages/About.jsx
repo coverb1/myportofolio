@@ -27,7 +27,7 @@ const About = () => {
       <div className="about-image-container">
         <img className="about-image" src={pass} alt="" />
       </div>
-{/* Menu Icon */}
+
       <div className="menu" onClick={()=>setMenuOpen(!menuOpen)}>
         <Menu size={30} /> 
       </div>
