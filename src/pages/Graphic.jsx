@@ -4,6 +4,7 @@ import graphic2 from "../assets/graphic2.jpg";
 import graphic3 from "../assets/graphic3.jpg";
 import graphic4 from "../assets/graphic4.jpg";
 import graphic5 from "../assets/graphic5.jpg";
+import graphic6 from "../assets/graphic6.jpg"
 import upworklogo from "../assets/upworklogo.png";
 import tiktoklogo from "../assets/tiktoklogo.png";
 import linkedinlogo from "../assets/linkedinlogo.png";
@@ -55,7 +56,7 @@ const Graphic = () => {
         </div>
 
         <div className="cards">
-          <img src='../assets/Graphic6.jpg' alt="" />
+          <img src={graphic6} alt="" />
           <h1>Birthday Flayer</h1>
           <p>Book and get Discount%</p>
           <button>On instagram</button>
