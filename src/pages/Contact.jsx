@@ -10,8 +10,6 @@ const [email,setemail]= useState("")
 const [message,setmessage]=useState("")
 const [submitted,setsubmitted]=useState("")
 
-
-
   const handlesubmit = (e) =>{
    e.preventDefault();
 
@@ -20,7 +18,8 @@ if (!email.includes("@")) {
   return  //We use **return** here to stop the function from continuing after showing the alert.
 }
 
-const API_URL = process.env.VITE_API_URL
+const API_URL = import.meta.env.VITE_API_URL;
+
 axios.post(`${API_URL}`,{
   name,email,message
 })
